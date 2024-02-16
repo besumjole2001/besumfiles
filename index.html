@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     
+    <script>
+        $(document).ready(function(){
+		$("a").on('click', function(event) {                                            
+			if (this.hash !== "") { 
+				event.preventDefault();
+				var hash = this.hash;
+				$('html, body').animate({
+					scrollTop: $(hash).offset().top
+				}, 800, function(){
+
+					window.location.hash = hash;
+				});
+			}
+		});
+	});
+</script>
+</head>
+<a href="#Home" id="myBtn" ><i class="fa fa-caret-square-o-up" title="Go to top"></i></a>
+<script>
+	let mybutton =document.getElementById("myBtn");
+	window.onscroll=function() {scrollFunction()};
+	function scrollFunction() {
+if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+	mybutton.style.display = "block";
+	}else{
+		mybutton.style.display = "none";
+	}
+}
+</script>
+<body>
+    <div class="banner" id="Home">
+
+    <div class="navbar">
+        <div class="logo">UIPC WEBSITE</div>
+        <ul>
+            <li><a href="#Home">HOME</a></li>
+            <li><a href="#news">NEWS</a></li>
+            <li><a href="#about">ABOUT US</a></li>
+            <li><a href="#gallery">GALLERY</a></li>
+            <li><a href="#testimony">TESTIMONY</a></li>
+        </ul>
+      </div>
+    <div class="content">
+        <h1>WELCOME TO UIPC</h1>
+        <P>For more videos please subcribe to our channel</P>
+
+        <div class="buttons">
+            <button type="button"><span></span>READ MORE</button>
+             <button type="button"><span></span>WATCH MORE</button>
+        </div>
+    </div>
+</div>
+
+<!---this is the end of the page-->
+<div class="blog-section" id="news">
+    <div class="section-content">
+        <div class="title">
+            <h2>UIPC NEWS</h2>
+            <P>Events handled and participated by UIPC</P>
+        </div>
+
+
+        <div class="cards">
+        <div class="card">
+
+            <div class="image-section">
+             <img src="img/n1.jpg">
+            </div>
+            <div class="article">
+                <h4>75th Grand Alumni</h4>
+                <p>University of iloilo celebrates the 
+                commencement of its 75th Grand Alumni Homecoming</br></br>
+
+                This event was graced by our guest of honor mr. jhenett tolentino
+                a Grammy Awardee and three time tony awardee and proud alumnus
+                of University of Iloilo, Batch 1997</p>
+                </div>
+
+                <div class="blog-view">
+                    <a href="" class="button">Read More</a>
+                </div>
+
+                <div class="posted-date">
+                    <p>Date Posted:October 30,2022</p>
+                </div>
+               </div>
+               <div class="card">
+                <div class="image-section">
+                    <img src="img/n2.jpg">
+                </div>
+                <div class="article">
+                    <h4>Workshop Seminar</h4>
+                    <p>University of Iloilo celebrates the  commencement 
+                     of its 75th Grand alumni Homecoming</br></br>
+
+                This event was graced by our guest of honor mr. jhenett tolentino
+                a Grammy Awardee and three time tony awardee and proud alumnus
+                of University of Iloilo, Batch 1997
+                </p>
+                </div>
+                <div class="blog-view">
+                    <a href=""class="button">Read More</a>
+                </div>
+
+                <div class="posted-date">
+                    <p>Date Posted:October 30,2022</p>
+                </div>
+               </div>
+               <div class="card">
+                <div class="image-section">
+                    <img src="img/n3.jpg">
+               </div>
+
+               <div class="article">
+                <h4>Cite Events</h4>
+                <p>University of iloilo celebrates the 
+                commencement of its 75th Grand Alumni Homecoming</br></br>
+
+                This event was graced by our guest of honor mr. jhenett tolentino
+                a Grammy Awardee and three time tony awardee and proud alumnus
+                of University of Iloilo, Batch 1997</p>
+                </div>
+
+                <div class="blog-view">
+                    <a href=""class="button">Read More</a>
+                </div>
+
+                <div class="posted-date">
+                    <p>Date Posted:October 30,2022</p>
+                </div>
+
+            </div>
+         </div>
+     </div>
+ </div>
+
+
+<!---this is the end of the page-->
+<div class="about-section" id="about">
+    <div class="heading">
+        <h1>About us</h1>
+
+        <p>UIPC aims to help the CITE students to
+        any languages like phython, java and ect. 
+        for their future purposes.
+        </p></br>
+    </div>
+    <div class="container">
+        <section class="about">
+            <div class="about-image">
+                <img src="img/ui.jpg">
+            </div>
+
+            <div class="about-content">
+                <h2>UIPC History</h2>
+                <p>Lorem ipsum dolor, sit amet 
+                    consectetur adipisicing elit. Consequuntur
+                    eaque tempora nulla amet quam asperiores 
+                    quisquam debitis, ratione nihil nisi! Aliquid 
+                    possimus alias dolore sit repellendus 
+                    enim mollitia voluptas cupiditate.</p>
+
+                    <a href="#" class="read-more">Read More</a>
+            </div>
+
+        </section>
+    </div>
+</div>
+
+<!---Gallery page-->
+    
+   <div class="gallery" id="gallery">
+
+    <input type="radio" name="photos" id="check1" checked>
+    <input type="radio" name="photos" id="check2">
+    <input type="radio" name="photos" id="check3">
+    <input type="radio" name="photos" id="check4">
+
+    <div class="gallery-container">
+        <h1>OUR PHOTO GALLERY</h1>
+        <div class="top-content">
+            <h3>Photo gallery</h3>
+            <label for="check1">All Photos</label>
+            <label for="check2">Events Photos</label>
+            <label for="check3">Bonding Photos</label>
+            <label for="check4">Outing Photos</label>
+        </div>
+
+        <div class="photo-gallery">
+            <div class="pic Events">
+                <img src="img/kt1.jpg"> 
+            </div>
+
+            <div class="pic Bonding">
+                <img src="img/u2.jpg">
+            </div>
+
+            <div class="pic Outing">
+                <img src="img/u3.jpg">
+            </div>
+
+            <div class="pic Events">
+                <img src="img/u4.jpeg">
+            </div>
+
+            <div class="pic Bonding">
+                <img src="img/u5.jpg">
+            </div>
+
+            <div class="pic Outing">
+                <img src="img/u6.jpg">
+            </div>
+
+            <div class="pic Events">
+                <img src="img/u7.jpg">
+            </div>
+
+            <div class="pic Bonding">
+                <img src="img/u8.jpg">
+            </div>
+
+            <div class="pic Outing">
+                <img src="img/u9.jpg">
+            </div>
+
+            <div class="pic Events">
+                <img src="img/u10.png">
+            </div>
+
+            <div class="pic Bonding">
+                <img src="img/u11.webp">
+            </div>
+
+            <div class="pic Outing">
+                <img src="img/u12.jpg">
+            </div>
+        </div>
+    </div>
+   </div>
+     
+   <!---testimony code-->
+  
+   <div class="blog-section" id="testimony">
+    <div class="section-content">
+        <div class="title">
+            <h2>Testimony</h2>
+            <P>This is testimony section</P>
+        </div>
+
+
+        <div class="bards">
+        <div class="bard">
+
+            <div class="image-section">
+             <img src="img/n1.jpg">
+            </div>
+             <div class="article">
+                <h4>JOHN REY SUMBE</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Quaerat ratione, quia eveniet quos enim distinctio vel 
+                uga dignissimos nisi illum optio sint aperiam asperiores dicta
+                facilis sit doloribus, expedita temporibus?</p>
+                </div>
+               </div>
+
+               <div class="bard">
+                <div class="image-section">
+                    <img src="img/n2.jpg">
+                </div>
+                <div class="article">
+                    <h4>JOHN REY SUMBE</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Quaerat blanditiis nam hic modi autem dolores, 
+                        perspiciatis consequatur recusandae excepturi eum 
+                        fugit, sed aperiam ipsum. 
+                        Ipsum et necessitatibus veritatis adipisci hic.</br></br>
+                  </p>
+                </div>
+               </div>
+               <div class="bard">
+                <div class="image-section">
+                    <img src="img/n3.jpg">
+               </div>
+
+               <div class="article">
+                <h4>JOHN REY SUMBE</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Laborum saepe aliquid esse accusantium eos at debitis
+                    optio fugiat maxime incidunt distinctio consequuntur,
+                    ut, reprehenderit, ullam adipisci est 
+                    sint dolore accusamus.</br></br></p>
+                </div>
+            </div>
+         </div>
+     </div>
+ </div>
+
+ <!--FOOTER-->
+ <div class="footer-basic">
+    <footer>
+        <ul>
+        <div class="social">
+            <a href="#"><i class="fa fa-facebook-official" style="color:blue"></i></a>
+            <a href="#"><i class="fa fa-instagram" style="color:orange;"></i></a>
+            <a href="#"><i class="fa fa-twitter"style="color:skyblue;"></i></a>
+            <a href="#"><i class="fa fa-youtube-play"style="color:red;"></i></a>
+        </div>
+        <p class="copyright">Managed and Created by Exoss </p>
+    </ul>
+    </footer>
+</div>
+
+
+</body>
+</html>
